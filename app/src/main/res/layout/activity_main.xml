@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.dimaculangan.writingdatadimaculangan.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Data:"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filename:"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:id="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/et_Data"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp" />
+
+    <EditText
+        android:id="@+id/et_filename"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/et_Data"
+        android:layout_alignStart="@+id/et_Data" />
+
+    <Button
+        android:id="@+id/btn_ShaPre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shared Preferences"
+        android:onClick="saveSharedPreferences"
+        android:layout_below="@+id/et_filename"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/btn_IntSto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Storage"
+        android:onClick="saveInternalStorage"
+        android:layout_below="@+id/btn_ShaPre"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_IntCh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Cache"
+        android:onClick="saveInternalCache"
+        android:layout_below="@+id/btn_IntSto"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_ExtCh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Cache"
+        android:onClick="saveExternalCache"
+        android:layout_below="@+id/btn_IntCh"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_ExtSto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Storage"
+        android:onClick="saveExternalStorage"
+        android:layout_below="@+id/btn_ExtCh"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_ExtPbSto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Public Storage"
+        android:onClick="saveExternalPublicStorage"
+        android:layout_below="@+id/btn_ExtSto"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_nxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="Next"/>
+
+</RelativeLayout>

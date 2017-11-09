@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.dimaculangan.writingdatadimaculangan.Main2Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filename: "
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:textSize="20dp"
+        android:id="@+id/textView"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/et_filename"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:id="@+id/tv_display"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:id="@+id/btn_ShaPre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shared Preferences"
+        android:onClick="displaySharedPreferences"
+        android:layout_below="@+id/tv_display"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_IntSto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Storage"
+        android:onClick="displayInternalStorage"
+        android:layout_below="@+id/btn_ShaPre"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_IntCh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Internal Cache"
+        android:onClick="displayInternalCache"
+        android:layout_below="@+id/btn_IntSto"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_ExtCh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Cache"
+        android:onClick="displayExternalCache"
+        android:layout_below="@+id/btn_IntCh"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_ExtSto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Storage"
+        android:onClick="displayExternalStorage"
+        android:layout_below="@+id/btn_ExtCh"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_ExtPbSto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="External Public Storage"
+        android:onClick="displayExternalPublicStorage"
+        android:layout_below="@+id/btn_ExtSto"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="Back"
+        android:layout_below="@+id/btn_ExtPbSto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>
